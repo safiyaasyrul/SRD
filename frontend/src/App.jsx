@@ -10,7 +10,7 @@ function App() {
     setMessage('Sending...');
     try {
       // This tells the website to talk to your Render brain
-      const response = await fetch('https://abstract-api-xyz.onrender.com/api/send-notice', {
+      const response = await fetch('https://abstract-api-j7wi.onrender.com/api/send-notice', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, name, status })
