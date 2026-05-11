@@ -5,7 +5,9 @@ const helmet = require('helmet');
 const app = express();
 
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  origin: 'https://srd-git-main-wannurdiyana-5641s-projects.vercel.app/' 
+}));
 app.use(express.json());
 
 // This is a test route
